@@ -1,0 +1,115 @@
+.container {
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    backdrop-filter: blur(10px)
+}
+
+.container__img__title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+}
+
+.images {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    margin-top: -18px;
+}
+
+.container__title {
+    text-shadow: 0.15em 0.15em #214119;
+    font-size: 2.5em;
+    
+    text-align: center;
+    color: #ff5733; /* Color del texto */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff5733, #e91e63); /* Degradado de fondo */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container__phrase {
+    width: 100%;
+    max-width: 30em;
+    background-color: rgba(255, 255, 255, 07);
+    padding: 1.5em 2em;
+    line-height: 1.4;
+    border-radius: 0.7em;
+    background-size: cover;
+    background-position: center;
+    margin: 5px auto;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    text-shadow: 4px -4px 4px rgba(197, 38, 144, 0.5);
+}
+
+.container__author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.container__button {
+    padding: 0.8em 1.2em;
+    border-radius: 0.7em;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 200ms ease;
+    background-image: url(https://www.lavanguardia.com/andro4all/hero/2023/04/6d8841b6-9d24-457a-95c5-0d3de1d7bf5f.png?width=768&aspect_ratio=16:9);
+    position: absolute;
+    bottom: 60px;
+
+}
+
+.container__button:hover {
+    opacity: 1;
+    transform: scale(1.02);
+    box-shadow: 4px 4px 0.8em #0005;
+
+}
+
+
+@media screen and (max-width: 617px) {
+    .container__title {
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 343px) {
+    .container__title {
+        margin-top: -45px;
+    }
+}
+
+@media screen and (max-width: 209px) {
+    .container__phrase {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 503px) {
+    .container__phrase {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+}
